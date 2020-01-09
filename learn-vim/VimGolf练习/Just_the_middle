@@ -1,0 +1,38 @@
+ust the middle
+
+Delete the instructions at the top and bottom.
+
+Start file
+===================================================================
+
+Leave only the
+numbered lines.
+LINE 1
+LINE 2
+LINE 3
+That's all.
+Thank you
+very much.
+
+
+End file
+===================================================================
+
+LINE 1
+LINE 2
+LINE 3
+
+
+===================================================================
+
+Leave only the
+numbered lines.
+LINE 1
+LINE 2
+LINE 3
+That's all.
+Thank you
+very much.
+
+方法：首先使用gg跳转到首行，然后使用2dd删除掉第一行和第二行
+      然后使用4G跳转到第四行，使用3dd删除掉剩余的行

@@ -1,0 +1,72 @@
+Start file
+
+10 PRINT "The actual"
+15 PRINT "code doesn't"
+16 PRINT "really matter."
+20 PRINT "Just take"
+25 PRINT "care of"
+30 PRINT "the numbers."
+
+
+
+End file
+
+10 PRINT "The actual"
+20 PRINT "code doesn't"
+30 PRINT "really matter."
+40 PRINT "Just take"
+50 PRINT "care of"
+60 PRINT "the numbers."
+
+
+
+############################################################################################
+
+
+
+10 PRINT "The actual"
+15 PRINT "code doesn't"
+16 PRINT "really matter."
+20 PRINT "Just take"
+25 PRINT "care of"
+30 PRINT "the numbers."
+
+
+对数字进行重编号:
+首先观察最终文件,首先通过块选操作选中第五行和第六行中的数字2，3，用y进行复制，
+然后光标移动到第二行，进行块选操作，选中数字1，1，进行粘贴。
+
+
+10 PRINT "The actual"
+25 PRINT "code doesn't"
+36 PRINT "really matter."
+20 PRINT "Just take"
+25 PRINT "care of"
+30 PRINT "the numbers."
+
+然后块选选中第二行和第三行的数字5，6，进行复制，光标块选操作选中第五行，第六行中的
+数字5，0，进行粘贴，
+
+10 PRINT "The actual"
+25 PRINT "code doesn't"
+36 PRINT "really matter."
+20 PRINT "Just take"
+55 PRINT "care of"
+60 PRINT "the numbers."
+
+然后光标移动到第四行数字2上，删掉2，插入一个4，
+这样第一列的数字修改完成。
+
+
+数字个位数上都是0，可以通过块选操作，将个位数字全选中，
+然后全部替换为0。
+
+
+
+
+
+
+
+
+
+

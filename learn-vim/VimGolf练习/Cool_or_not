@@ -1,0 +1,58 @@
+Start file
+
+This is abc.
+This is also abc.
+This abc is cool.
+This abc is so cool.
+This is a simple abc.
+This isn't a cool abc.
+This abc is not as cool as used to be.
+This abc really is cool.
+This abc is not so cool
+I finally found a real abc.
+
+
+End file
+
+This is abc.
+This is also abc.
+This abcool is cool.
+This abcool is so cool.
+This is a simple abc.
+This isn't a cool abc.
+This abc is not as cool as used to be.
+This abcool really is cool.
+This abc is not so cool
+I finally found a real abc.
+
+
+########################################################################
+
+This is abc.
+This is also abc.
+This abccool is cool.
+This abccool is so cool.
+This is a simple abc.
+This isn't a cool abc.
+This abc is not as cool as used to be.
+This abccool really is cool.
+This abc is not so cool
+I finally found a real abc.
+
+
+实现方式：
+使用文本对象，首先光标移动到‘abc’字符上，
+然后按caw，修改一个单词，此时进入了插入模式，然后，输入abcool，
+输入完成后退出插入模式。
+最后移动光标到每一处出现字符‘abc’的位置，使用‘.'命令进行重复.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+任务：在每一句的末尾添加一个分号
+
+start file
+
+super.onCreate(savedInstanceState)
+ setContentView(R.layout.activity_second)
+ Intent intent = getIntent()
+ String text = intent.getStringExtra("text")
+
+ TextView view = findViewById(R.id.textView2)
+ view.setText(text)
+
+
+
+
+
+ end file
+ 
+ super.onCreate(savedInstanceState);
+ setContentView(R.layout.activity_second);
+ Intent intent = getIntent();
+ String text = intent.getStringExtra("text");
+
+ TextView view = findViewById(R.id.textView2);
+ view.setText(text);

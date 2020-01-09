@@ -1,0 +1,22 @@
+citizen_hacks_2019_challenge3
+
+For the Citizen Hacks 2019 Vim competition.
+
+Start file
+
+citizen hacks
+
+
+End file
+
+hacks
+
+
+
+
+citizen hacks
+
+方法：1，使用daw删除一个单词
+      2，使用caw，然后退出插入模式
+      3，移动到行首，然后使用7x，删除7个字符
+      4, 移动到行首，使用dfn，删除掉当前光标所在字符‘c'到字符’n'

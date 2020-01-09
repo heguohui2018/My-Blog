@@ -1,0 +1,39 @@
+
+Split line with dots
+
+This line is too long, split it.
+
+Start file
+===================================================================================
+
+class VimGolf
+  def split_me
+    MyModel.first_method.second_method(arg).third_method(arg.method_one.method_two)
+  end
+end
+
+
+End file
+===================================================================================
+
+class VimGolf
+  def split_me
+    MyModel
+      .first_method
+      .second_method(arg)
+      .third_method(arg.method_one.method_two)
+  end
+end
+
+
+
+===================================================================================
+
+class VimGolf
+  def split_me
+    MyModel
+        .first_method
+        .second_method(arg)
+        .third_method(arg.method_one.method_two)
+  end
+end

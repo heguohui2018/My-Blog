@@ -1,0 +1,36 @@
+Applying same text modification in several lines
+
+Remove identical text at the beginning of several lines and the closing parenthesis.
+
+Start file
+=================================================================
+
+Assert.ThrowsAsync<Exception>(() => _auction.StartSellingItem());
+Assert.ThrowsAsync<Exception>(() => _application.StartBiddingIn(_auction));
+Assert.ThrowsAsync<Exception>(() => _auction.HasReceivedJoinRequestFromSniper());
+Assert.ThrowsAsync<Exception>(() => _auction.AnnounceClosed());
+Assert.ThrowsAsync<Exception>(() => _application.ShowsSniperHasLostAuction());
+
+
+
+End file
+=================================================================
+
+_auction.StartSellingItem();
+_application.StartBiddingIn(_auction);
+_auction.HasReceivedJoinRequestFromSniper();
+_auction.AnnounceClosed();
+_application.ShowsSniperHasLostAuction();
+
+
+
+=================================================================
+
+Assert.ThrowsAsync<Exception>(() => _auction.StartSellingItem());
+Assert.ThrowsAsync<Exception>(() => _application.StartBiddingIn(_auction));
+Assert.ThrowsAsync<Exception>(() => _auction.HasReceivedJoinRequestFromSniper());
+Assert.ThrowsAsync<Exception>(() => _auction.AnnounceClosed());
+Assert.ThrowsAsync<Exception>(() => _application.ShowsSniperHasLostAuction());
+
+方法：每一行的前面都有相同，可以使用‘control+v'进行块选操作，然后使用‘e'跳到单词末尾来扩大选区，选区确定后使用
+’d‘删除选中范围

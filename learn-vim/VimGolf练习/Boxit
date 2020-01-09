@@ -1,0 +1,33 @@
+Start file
+
+My dream is to be in a box
+
+
+End file
+
+###############################
+# My dream was to be in a box #
+###############################
+
+
+
+
+
+##############################
+# My dream is to be in a box #
+##############################
+
+
+首先在行首插入字符 ‘# <space>'
+然后在行尾插入字符 ‘<space> #'
+
+得到如下样式：
+'# My dream is to be in a box #'
+
+然后将其复制，粘贴两次，得到如何下样式：
+
+# My dream is to be in a box #
+# My dream is to be in a box #
+# My dream is to be in a box #
+
+最后使用： r‘#’替换掉第一行和最后一行字符。

@@ -1,0 +1,22 @@
+
+A HAPPY NEW YEAR 2014 !
+
+
+Start file
+============================
+
+A HAPPY END WITH YEAR 2013 !
+
+End file
+============================
+
+A HAPPY NEW YEAR 2014 !
+
+
+
+============================
+
+A HAPPY END WITH YEAR 2013 !
+
+方法：使用字符查找命令分别定位到‘END’,然后使用c2w，修改2个单词，输入‘NEW'，
+      然后定位到‘2013’，使用<contral>+a,给2013加上1

@@ -1,0 +1,39 @@
+ninja substitution
+
+How can you reuse a previous substitution ?
+
+Start file
+===========================================
+
+Trying to careninjafully make a ninja challenge.
+This ninjaninjachallenge is ninjadesigned to show a particularninja vim ninjafeature (here I am ninjastalling in order to ninjadoge a shorter ninjacounter-based ninjasolution, sorry for the ninjaheadhache) this is the end of my ninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjalninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaininjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjanninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaeninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninja.
+The question is, will a wiser vimgolf ninja defeat the purpose of this challenge ?
+
+
+End file
+===========================================
+
+Trying to carefully make a ninja challenge.
+This challenge is designed to show a particular vim feature (here I am stalling in order to doge a shorter counter-based solution, sorry for the headhache) this is the end of my line.
+The question is, will a wiser vimgolf ninja defeat the purpose of this challenge ?
+
+
+
+
+===========================================
+
+Trying to carefully make a ninja challenge.
+This challenge is designed to show a particular vim feature (here I am stalling in order to doge a shorter counter-based solution, sorry for the ninjaheadhache) this is the end of my ninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjalninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaininjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjanninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaeninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninjaninja.
+The question is, will a wiser vimgolf ninja defeat the purpose of this challenge ?
+
+
+
+方法：首先使用字符查找命令，定位到第一行的第二个字符‘n'，然后使用dfa，删除掉字符‘n'到字符’a',
+      
+
+
+
+
+
+
+

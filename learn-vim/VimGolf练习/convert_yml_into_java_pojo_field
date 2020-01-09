@@ -1,0 +1,40 @@
+
+convert yml into java pojo field
+
+How fast vim can create fields for java pojo i.e class declaration referring to a (simple) yml file
+
+Start file
+==============================
+
+- browser: Chrome
+  browserVersion: 63
+  os: window7
+  osVersion: 2012
+  lang: en
+
+
+End file
+==============================
+
+private String browser;
+private String browserVersion;
+private String os;
+private String osVersion;
+private String lang;
+
+
+==============================
+
+Private String browser;
+Private String browserVersion;
+Private String os;
+Private String osVersion;
+Private String lang;
+  
+
+观察每个一行的结构，主要是将每一行’：‘以后的内容删除掉，然后将’：‘替换为’；‘，
+最后在每行的行首添加’private string‘
+
+
+
+
