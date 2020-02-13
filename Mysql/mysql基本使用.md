@@ -36,6 +36,38 @@ root : 管理员
 
 123456 : 管理员密码
 
+## mysql修改密码
+
+首先到以下路径/etc/my.cnf,添加 :skip-grant-table,
+
+```mysql
+mysql -u root -p 登录数据库
+
+mysql>use mysql  使用数据库
+
+mysql>flush privileges; 刷新，否则会报错
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> alter user 'root'@'localhost'IDENTIFIED BY 'Heguohui123456';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+
+mysql>  alter user'root'@'localhost'identified BY 'Heguohui@123456';
+Query OK, 0 rows affected (0.01 sec)
+
+需要注意的是mysql8密码策略的修改，必须有大写字母，小写字母，特殊字符，以及数字组成的密码，才能使密码生效，否则会报错
+```
+设置成功后在把 ：skip-grant-table 这行给删除掉
+
+
+添加访问权限，解决客户端连接数据库失败
+```mysql
+mysql>grant all on *.* to 'root'@'localhost' with grant option;
+
+mysql>flush privileges; 刷新权限
+```
+grant all( 权限列表 ) on ****.*( 数据库 ) to '用户名'@'访问主机' with grant option;(修改权限时在后面加 with grant option)
+
 
 ## 一些常用的sql语句
 
@@ -83,9 +115,6 @@ root : 管理员
 ``````
 ``````
 ``````
-
-
-
 
 
 
