@@ -1,4 +1,4 @@
-# vim学习指南
+# web开发人员的vim学习指南
 
 >-作者：heguohui2018
 
@@ -21,12 +21,39 @@
     在mormal模式下，任何在编辑区域试图输入任何内容都是无效的，是无法输入任何字符，刚开始使用时可能觉得比较难用，怪异，当你理解vim的设计时，作为一名开发者，
     大部分时间都应该在阅读，和调试代码，很少一直处于输入的状态，
 
+## neovim及其插件的安装
+	brew install neovim
+	
+	python依赖
+	pip3 install --user neovim
+
+	npm依赖
+	npm -g install neovim
+
+	ruby依赖
+	gem install neovim
+
+	vim-plug插件管理器
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+	coc.nvim代码补全插件
+	:cocinstall coc-html coc-css coc-json coc-phpls coc-python coc-snippets
+	coc-git coc-translator coc-svg coc-tsserver coc-explorer coc-lists coc-prettier coc-sources
+	coc-highlight coc-vetur coc-diagnostic
+
+	vscode代码片段
+	cocinstall  https://github.com/sdras/vue-vscode-snippets
+	cocinstall	https://github.com/abusaidm/html-snippets
+	cocinstall  https://github.com/DonJayamanne/jquerysnippets
+
+
 ## 基本键位映射
     与绝大多数的编辑器最大不同在于，vim是区分模式的，而一些其他软件，例如：`word`,`notepad`,以及一些程序员使用的开发工具，当打开软件时，默认处于编辑状态，
     ，你就可以往文件内输入东西，
 
 
-    `
+    
             k                                              向上移动一行
 
         h       l       ------------>      向左移动一个字符            向右移动一个字符
@@ -35,7 +62,7 @@
             j                                               向下移动一行
 
 
-    `
+    
 
 ## 基本命令
 
