@@ -158,23 +158,26 @@ varchar(10) not null , pid smallint(5) unsigned , foreign key (pid) references
 
 ```select user,host from user;```
 
-+-----------+---------------+
-| host      | user          |
-+-----------+---------------+
-| 127.0.0.1 | root          |
-| ::1       | root          |
-| localhost | mamp          |
-| localhost | mysql.session |
-| localhost | mysql.sys     |
-| localhost | root          |
-+-----------+---------------+
++-----------------+-----------+
+| user            | host      |
++-----------------+-----------+
+| root            | 127.0.0.1 |
+| root            | ::1       |
+| Navicat-Premium | localhost |
+| mamp            | localhost |
+| mycli           | localhost |
+| mysql.session   | localhost |
+| mysql.sys       | localhost |
+| root            | localhost |
++-----------------+-----------+
 
 root@127.0.0.1 表示本机的root用户可以登陆，127.0.0.1是本地回路的ip地址
 root@::1 表示本机的root用户可以登陆，::1是ipv6本机地址，相当于127.0.0.1的ipv6
 root@localhost 表示只有本机root用户可以登陆
 
 在mysql增加一个和root权限一样的用户，安排
-create user 'mycli'@'localhost' identified by 'Heguohui@123456';
+
+```create user 'mycli'@'localhost' identified by 'Heguohui@123456';```
 
 添加访问权限，解决客户端连接数据库失败
 ```mysql

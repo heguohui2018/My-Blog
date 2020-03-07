@@ -1,0 +1,19 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "## 记录日常学习的东西，以及一些经常遇到的问题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heguohui2018/My-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heguohui2018/My-Blog/issues"
+  },
+  "homepage": "https://github.com/heguohui2018/My-Blog#readme"
+}
