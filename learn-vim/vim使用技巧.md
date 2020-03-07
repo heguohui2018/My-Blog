@@ -12,6 +12,13 @@
     - [文本对象列表](#文本对象列表)
 - [文件操作](#文件操作)
 - [多窗口](#多窗口)
+- [web开发人员必备vim插件](#web开发人员必备vim插件)
+	* [emmet-vim](#emmet-vim)
+	* [web开发人员必备vim插件](#web开发人员必备vim插件)
+	* [web开发人员必备vim插件](#web开发人员必备vim插件)
+	* [web开发人员必备vim插件](#web开发人员必备vim插件)
+	* [web开发人员必备vim插件](#web开发人员必备vim插件)
+	* [web开发人员必备vim插件](#web开发人员必备vim插件)
 - [vim帮助文档](#vim帮助文档)
 - [vim资源列表](#vim资源列表)
 
@@ -34,23 +41,29 @@
 	gem install neovim
 
 	vim-plug插件管理器
+
+```curl
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
 	coc.nvim代码补全插件
-	:cocinstall coc-html coc-css coc-json coc-phpls coc-python coc-snippets
+```vim
+	cocinstall coc-html coc-css coc-json coc-phpls coc-python coc-snippets
 	coc-git coc-translator coc-svg coc-tsserver coc-explorer coc-lists coc-prettier coc-sources
 	coc-highlight coc-vetur coc-diagnostic
+```
 
 	vscode代码片段
+```vim
 	cocinstall  https://github.com/sdras/vue-vscode-snippets
 	cocinstall	https://github.com/abusaidm/html-snippets
 	cocinstall  https://github.com/DonJayamanne/jquerysnippets
+```
 
 
 ## 基本键位映射
-    与绝大多数的编辑器最大不同在于，vim是区分模式的，而一些其他软件，例如：`word`,`notepad`,以及一些程序员使用的开发工具，当打开软件时，默认处于编辑状态，
-    ，你就可以往文件内输入东西，
+    与绝大多数的编辑器最大不同在于，vim是区分模式的，而一些其他软件，例如：`word`,`notepad`,以及一些程序员使用的开发工具，当打开软件时，默认处于编辑状态，，你就可以往文件内输入东西，
 
 
     
@@ -87,6 +100,44 @@
 
 
 
+## web开发人员必备vim插件
+
+### [ emmet-vim ](https://github.com/mattn/emmet-vim)
+
+	安装:
+	Plug 'mattn/emmet-vim',{ 'for': ['html', 'css','scss'] }
+
+	配置:
+	let g:user_emmet_install_global = 0
+	let g:user_emmet_mode='i' 
+	autocmd FileType html,css EmmetInstall
+
+	emmet-vim:号称前端开发的神器，他为开发人员节约了不少生命，下面介绍一下他的主要用法
+	emmet-vim的默认快捷键为 <c-y>,
+
+### [ html5.vim ](https://github.com/othree/html5.vim)
+
+	Plug 'othree/html5.vim',{'for':['html']}
+
+	html5语法插件
+
+### [ tagalong.vim](https://github.com/AndrewRadev/tagalong.vim)
+
+	Plug 'AndrewRadev/tagalong.vim',{'for':['html']}
+
+	html标签重命名插件
+
+### [ vim-css3-syntax ](https://github.com/hail2u/vim-css3-syntax)
+
+	Plug 'hail2u/vim-css3-syntax',{'for':['css','scss']}
+
+	css语法插件
+
+### [ vim-css-color ](https://github.com/ap/vim-css-color)
+
+	Plug 'ap/vim-css-color' 
+
+	这是一款预览颜色的插件
 
 ## vim帮助文档
 
