@@ -2,14 +2,12 @@
 
 创建项目
 
-```composer create-project --prefer-dist laravel/laravel newblog.com "5.2.*"```
+```composer create-project --prefer-dist laravel/laravel 项目名称 "5.2.*"```
 
-激活Auth组件
-
-```composer require laravel/ui```
+解决安装 laravel/ui 扩展包报错
 
 ```php 
-composer require laravel/ui --dev
+composer require laravel/ui "^1.0" --dev
 ```
 
 ```php 
@@ -27,7 +25,49 @@ php artisan ui bootstrap --auth
 ```php 
 php artisan make:migration create_articles_table
 
+
 ```
+中文语言扩展包
+
+```php
+`composer require "overtrue/laravel-lang:~3.0"
+``
+
+验证码扩展包
+
+```php 
+composer require "mews/captcha:~3.0"
+```
+
+生成验证码配置文件
+
+```php 
+php artisan vendor:publish --provider='Mews\Captcha\CaptchaServiceProvider'
+```
+laravel 中间件
+
+```php
+php artisan make:middleware EnsureEmailIsVerified
+
+```
+
+```php 
+php artisan event:generate
+
+```
+
+密码重置, find() 用来查找 id ，如果 id值与 User表的id值不一致时会报错
+
+```php
+php artisan tinker
+
+>>>  App\Models\User::find(1)->markEmailAsVerified()
+PHP Error:  Call to a member function markEmailAsVerified() on null in /Users/apple/Desktop/Super-vimeval()'d code on line 1
+
+>>> App\Models\User::find(8)->markEmailAsVerified();
+=> true
+```
+
 2,填写数据内容
 
 ```php
@@ -144,6 +184,70 @@ php artisan db:seed --class=ArticleSeeder
 	{
 		//
 	}
+
+
+新增分类模型文件
+```php
+php artisan make:model Models/Category -m
+```
+
+修改分类模型
+
+```php 
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Category extends Model
+{
+    public $timestamps = false;
+
+    protected $fillable = [
+        'name', 'description',
+    ];
+}
+```
+
+初始化数据分类
+
+```php 
+ php artisan make:migration seed_categories_data
+```
+
+代码生成器
+
+
+
+
+
+
+
+
+error
+```php
+php artisan migrate
+
+报错:无数据迁移
+Nothing to migrate.
+
+解决办法 : 强制迁移,可能造成的问题是数据丢失 ,其是删除所有表，然后在迁移
+php artisan migrate --force
+php artisan migrate
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 控制器内添加方法
 
