@@ -2,12 +2,14 @@
 
 创建项目
 
-```composer create-project --prefer-dist laravel/laravel 项目名称 "5.2.*"```
+```php 
+composer create-project --prefer-dist laravel/laravel 项目名称 "5.2.*"
+```
 
 解决安装 laravel/ui 扩展包报错
 
 ```php 
-composer require laravel/ui "^1.0" --dev
+composer require laravel/ui "^2.0" --dev
 ```
 
 ```php 
@@ -215,7 +217,9 @@ class Category extends Model
 ```
 
 代码生成器
-
+```php 
+composer require "summerblue/generator:6.*" --dev
+```
 
 
 
